@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "NRF52840-QIAA-R")(type "KiCad")(uri "${KIPRJMOD}/libs/nrf52840_QIAA-R/NRF52840-QIAA-R.kicad_sym")(options "")(descr ""))
+  (lib (name "NRF52840-CKAA-R7")(type "Legacy")(uri "${KIPRJMOD}/libs/nrf52840_QIAA/NRF52840-CKAA-R7.lib")(options "")(descr ""))
+)

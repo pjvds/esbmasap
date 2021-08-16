@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "nrf52840_QIAA-R")(type "KiCad")(uri "${KIPRJMOD}/libs/nrf52840_QIAA-R")(options "")(descr ""))
+  (lib (name "nrf52840_QIAA")(type "KiCad")(uri "${KIPRJMOD}/libs/nrf52840_QIAA")(options "")(descr ""))
+)

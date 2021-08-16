@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NRF52840-CKAA-R7
+D Quark Graviton WLCSP 7  reel
+K
+F https://eu.mouser.com/datasheet/2/297/nRF52840_PS_v1.1-1623672.pdf
+$ENDCMP
+#
+#End Doc Library

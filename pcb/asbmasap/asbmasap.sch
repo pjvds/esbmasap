@@ -597,17 +597,6 @@ Text GLabel 9600 3525 2    50   Output ~ 0
 5v_OUT
 Wire Wire Line
 	9125 3525 9600 3525
-$Comp
-L MCU_Nordic:nRF52840 U3
-U 1 1 61223031
-P 11925 8550
-F 0 "U3" H 11925 5661 50  0000 C CNN
-F 1 "nRF52840" H 11925 5570 50  0000 C CNN
-F 2 "Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm" H 11925 5650 50  0001 C CNN
-F 3 "http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52/dita/nrf52/chips/nrf52840.html" H 11275 10450 50  0001 C CNN
-	1    11925 8550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13225 10950 13325 10950
 Wire Wire Line
@@ -616,16 +605,6 @@ Text GLabel 13325 10950 2    50   BiDi ~ 0
 USB_D-
 Text GLabel 13325 11050 2    50   BiDi ~ 0
 USB_D+
-Text Notes 13800 5425 0    50   ~ 0
-Clock control
-Text GLabel 10625 8350 0    50   Input ~ 0
-XC1
-Text GLabel 10625 8750 0    50   Input ~ 0
-XC2
-Text GLabel 13225 6050 2    50   Input ~ 0
-XL1
-Text GLabel 13225 6150 2    50   Input ~ 0
-XL2
 $Comp
 L Device:C_Small C22
 U 1 1 6128E9F9
@@ -998,152 +977,6 @@ F 3 "" H 10000 10500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8500 3425 8500 3075
-Connection ~ 9810 8795
-Wire Wire Line
-	10060 8795 9810 8795
-Wire Wire Line
-	9810 8320 9410 8320
-Wire Wire Line
-	9810 8320 9810 8395
-Connection ~ 9810 8320
-Wire Wire Line
-	10060 8320 9810 8320
-Wire Wire Line
-	9810 8795 9810 8695
-Wire Wire Line
-	9410 8795 9810 8795
-Wire Wire Line
-	8910 8795 8910 8870
-Connection ~ 8910 8795
-Wire Wire Line
-	9110 8795 8910 8795
-Wire Wire Line
-	8910 8320 8910 8795
-Wire Wire Line
-	9110 8320 8910 8320
-$Comp
-L power:GND #PWR0109
-U 1 1 61250AE5
-P 8910 8870
-F 0 "#PWR0109" H 8910 8620 50  0001 C CNN
-F 1 "GND" H 8915 8697 50  0000 C CNN
-F 2 "" H 8910 8870 50  0001 C CNN
-F 3 "" H 8910 8870 50  0001 C CNN
-	1    8910 8870
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 6124DCA3
-P 9260 8795
-F 0 "C9" V 9008 8795 50  0000 C CNN
-F 1 "12pF" V 9099 8795 50  0000 C CNN
-F 2 "" H 9298 8645 50  0001 C CNN
-F 3 "~" H 9260 8795 50  0001 C CNN
-	1    9260 8795
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 6124D361
-P 9260 8320
-F 0 "C8" V 9008 8320 50  0000 C CNN
-F 1 "12pF" V 9099 8320 50  0000 C CNN
-F 2 "" H 9298 8170 50  0001 C CNN
-F 3 "~" H 9260 8320 50  0001 C CNN
-	1    9260 8320
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:Crystal Y2
-U 1 1 6124BD5F
-P 9810 8545
-F 0 "Y2" V 9855 8660 50  0000 L CNN
-F 1 "32MHz" V 9780 8660 50  0000 L CNN
-F 2 "" H 9810 8545 50  0001 C CNN
-F 3 "~" H 9810 8545 50  0001 C CNN
-	1    9810 8545
-	0    1    -1   0   
-$EndComp
-Text GLabel 10060 8795 2    50   Input ~ 0
-XC2
-Text GLabel 10060 8320 2    50   Input ~ 0
-XC1
-Connection ~ 14195 6345
-Wire Wire Line
-	13945 6345 14195 6345
-Wire Wire Line
-	14195 5870 14595 5870
-Wire Wire Line
-	14195 5870 14195 5945
-Connection ~ 14195 5870
-Wire Wire Line
-	13945 5870 14195 5870
-Wire Wire Line
-	14195 6345 14195 6245
-Wire Wire Line
-	14595 6345 14195 6345
-Wire Wire Line
-	14895 6345 15095 6345
-Wire Wire Line
-	14895 5870 15095 5870
-$Comp
-L power:GND #PWR0110
-U 1 1 6126F786
-P 15095 6420
-F 0 "#PWR0110" H 15095 6170 50  0001 C CNN
-F 1 "GND" H 15100 6247 50  0000 C CNN
-F 2 "" H 15095 6420 50  0001 C CNN
-F 3 "" H 15095 6420 50  0001 C CNN
-	1    15095 6420
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 6126F77C
-P 14745 6345
-F 0 "C7" V 14493 6345 50  0000 C CNN
-F 1 "12pF" V 14584 6345 50  0000 C CNN
-F 2 "" H 14783 6195 50  0001 C CNN
-F 3 "~" H 14745 6345 50  0001 C CNN
-	1    14745 6345
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 6126F772
-P 14745 5870
-F 0 "C6" V 14493 5870 50  0000 C CNN
-F 1 "12pF" V 14584 5870 50  0000 C CNN
-F 2 "" H 14783 5720 50  0001 C CNN
-F 3 "~" H 14745 5870 50  0001 C CNN
-	1    14745 5870
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Crystal Y1
-U 1 1 6126F768
-P 14195 6095
-F 0 "Y1" V 14241 6226 50  0000 L CNN
-F 1 "32.768kHz" V 14150 6226 50  0000 L CNN
-F 2 "" H 14195 6095 50  0001 C CNN
-F 3 "~" H 14195 6095 50  0001 C CNN
-	1    14195 6095
-	0    -1   -1   0   
-$EndComp
-Text GLabel 13945 6345 0    50   Input ~ 0
-XL2
-Text GLabel 13945 5870 0    50   Input ~ 0
-XL1
-Wire Wire Line
-	15095 5870 15095 6345
-Connection ~ 15095 6345
-Wire Wire Line
-	15095 6345 15095 6420
-Text Notes 9920 8685 0    50   ~ 0
-Cl = 12pF
-Text Notes 14100 6250 2    50   ~ 0
-Cl = 12.5pF
 Wire Wire Line
 	12425 5700 12425 5750
 Connection ~ 11925 5475
@@ -1318,24 +1151,6 @@ Wire Notes Line
 	16525 8225 16525 12050
 Text GLabel 12025 11350 3    50   Input ~ 0
 VSS_PA
-Wire Notes Line
-	15300 5300 15300 6725
-Wire Notes Line
-	15300 6725 13550 6725
-Wire Notes Line
-	13550 6725 13550 5300
-Wire Notes Line
-	13550 5300 15300 5300
-Wire Notes Line
-	8775 9125 10350 9125
-Wire Notes Line
-	10350 9125 10350 7975
-Wire Notes Line
-	10350 7975 8775 7975
-Wire Notes Line
-	8775 7975 8775 9125
-Text Notes 9475 8150 0    50   ~ 0
-Clock control
 Text GLabel 10625 6750 0    50   Input ~ 0
 ANT
 Wire Wire Line
@@ -1424,4 +1239,161 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1800 22
 $EndComp
 Wire Wire Line
 	10550 10250 10625 10250
+$Comp
+L MCU_Nordic:nRF52840 U3
+U 1 1 61223031
+P 11925 8550
+F 0 "U3" H 11925 5661 50  0000 C CNN
+F 1 "nRF52840" H 11925 5570 50  0000 C CNN
+F 2 "Package_DFN_QFN:Nordic_AQFN-73-1EP_7x7mm_P0.5mm" H 11925 5650 50  0001 C CNN
+F 3 "http://infocenter.nordicsemi.com/topic/com.nordic.infocenter.nrf52/dita/nrf52/chips/nrf52840.html" H 11275 10450 50  0001 C CNN
+	1    11925 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9535 8750 9535 8825
+Wire Wire Line
+	10125 8750 10625 8750
+Wire Wire Line
+	10125 8700 10125 8750
+Wire Wire Line
+	10125 8350 10625 8350
+Wire Wire Line
+	10125 8400 10125 8350
+Wire Wire Line
+	9735 8750 9535 8750
+Wire Wire Line
+	9735 8350 9535 8350
+$Comp
+L power:GND #PWR0109
+U 1 1 61250AE5
+P 9535 8825
+F 0 "#PWR0109" H 9535 8575 50  0001 C CNN
+F 1 "GND" H 9540 8652 50  0000 C CNN
+F 2 "" H 9535 8825 50  0001 C CNN
+F 3 "" H 9535 8825 50  0001 C CNN
+	1    9535 8825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 6124DCA3
+P 9885 8750
+F 0 "C9" V 9633 8750 50  0000 C CNN
+F 1 "12pF" V 9724 8750 50  0000 C CNN
+F 2 "" H 9923 8600 50  0001 C CNN
+F 3 "~" H 9885 8750 50  0001 C CNN
+	1    9885 8750
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 6124D361
+P 9885 8350
+F 0 "C8" V 9633 8350 50  0000 C CNN
+F 1 "12pF" V 9724 8350 50  0000 C CNN
+F 2 "" H 9923 8200 50  0001 C CNN
+F 3 "~" H 9885 8350 50  0001 C CNN
+	1    9885 8350
+	0    -1   1    0   
+$EndComp
+Text Notes 10235 8690 0    50   ~ 0
+Cl = 12pF
+$Comp
+L Device:Crystal Y2
+U 1 1 6124BD5F
+P 10125 8550
+F 0 "Y2" V 10170 8665 50  0000 L CNN
+F 1 "32MHz" V 10095 8665 50  0000 L CNN
+F 2 "" H 10125 8550 50  0001 C CNN
+F 3 "~" H 10125 8550 50  0001 C CNN
+	1    10125 8550
+	0    1    -1   0   
+$EndComp
+Connection ~ 10125 8350
+Wire Wire Line
+	10035 8350 10125 8350
+Connection ~ 10125 8750
+Wire Wire Line
+	10035 8750 10125 8750
+Connection ~ 9535 8750
+Wire Wire Line
+	9535 8350 9535 8750
+Connection ~ 10625 8750
+Wire Wire Line
+	10625 8750 10685 8750
+Connection ~ 10625 8350
+Wire Wire Line
+	10625 8350 10685 8350
+Wire Wire Line
+	14440 5750 14440 6150
+Wire Wire Line
+	13940 6150 13850 6150
+Wire Wire Line
+	13940 5750 13850 5750
+$Comp
+L Device:Crystal Y1
+U 1 1 6197F8CB
+P 13850 5950
+F 0 "Y1" V 13895 6065 50  0000 L CNN
+F 1 "32.768kHz" V 13820 6065 50  0000 L CNN
+F 2 "" H 13850 5950 50  0001 C CNN
+F 3 "~" H 13850 5950 50  0001 C CNN
+	1    13850 5950
+	0    -1   -1   0   
+$EndComp
+Text Notes 13740 6090 2    50   ~ 0
+Cl = 12.5pF
+$Comp
+L power:GND #PWR0110
+U 1 1 6197F8DE
+P 14440 6225
+F 0 "#PWR0110" H 14440 5975 50  0001 C CNN
+F 1 "GND" H 14445 6052 50  0000 C CNN
+F 2 "" H 14440 6225 50  0001 C CNN
+F 3 "" H 14440 6225 50  0001 C CNN
+	1    14440 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14240 5750 14440 5750
+Wire Wire Line
+	14240 6150 14440 6150
+Wire Wire Line
+	13850 5800 13850 5750
+Connection ~ 13850 5750
+Wire Wire Line
+	13850 6100 13850 6150
+Connection ~ 13850 6150
+Connection ~ 14440 6150
+Wire Wire Line
+	14440 6150 14440 6225
+$Comp
+L Device:C C7
+U 1 1 6197F8D8
+P 14090 6150
+F 0 "C7" V 13838 6150 50  0000 C CNN
+F 1 "12pF" V 13929 6150 50  0000 C CNN
+F 2 "" H 14128 6000 50  0001 C CNN
+F 3 "~" H 14090 6150 50  0001 C CNN
+	1    14090 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6197F8D2
+P 14090 5750
+F 0 "C6" V 13838 5750 50  0000 C CNN
+F 1 "12pF" V 13929 5750 50  0000 C CNN
+F 2 "" H 14128 5600 50  0001 C CNN
+F 3 "~" H 14090 5750 50  0001 C CNN
+	1    14090 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13225 6150 13850 6150
+Wire Wire Line
+	13225 6050 13225 5750
+Wire Wire Line
+	13225 5750 13850 5750
 $EndSCHEMATC

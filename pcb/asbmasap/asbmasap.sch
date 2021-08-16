@@ -38,9 +38,9 @@ Wire Wire Line
 Connection ~ 2300 2425
 Wire Wire Line
 	2300 2425 2300 2475
-Text GLabel 2750 2225 0    50   BiDi ~ 0
+Text GLabel 2375 2225 2    50   BiDi ~ 0
 USB_D-
-Text GLabel 2750 2425 0    50   BiDi ~ 0
+Text GLabel 2375 2425 2    50   BiDi ~ 0
 USB_D+
 $Comp
 L Device:R R2

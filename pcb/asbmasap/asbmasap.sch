@@ -1396,4 +1396,9 @@ Wire Wire Line
 	13225 6050 13225 5750
 Wire Wire Line
 	13225 5750 13850 5750
+Text GLabel 3650 1200 1    50   Output ~ 0
+VBUS
+Wire Wire Line
+	3650 1350 3650 1200
+Connection ~ 3650 1350
 $EndSCHEMATC

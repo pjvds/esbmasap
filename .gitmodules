@@ -1,0 +1,7 @@
+[submodule "pcb/asbmasap/libs/marbastlib"]
+	path = pcb/asbmasap/libs/marbastlib
+	url = https://github.com/ebastler/marbastlib
+	branch = untested
+[submodule "pcb/asbmasap/libs/Type-C.pretty"]
+	path = pcb/asbmasap/libs/Type-C.pretty
+	url = https://github.com/ai03-2725/Type-C.pretty.git
